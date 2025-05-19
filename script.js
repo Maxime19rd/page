@@ -1,8 +1,8 @@
 const projects = [
   {
     title: "Classification supervisée",
-    description: "Comparaison de méthodes de classification en R et Python.",
-    url: "docs/classification.pdf"
+    description: "Méthodes de classification en R et Python.",
+    url: "https://cel.hal.science/hal-04690630v2"
   },
   {
     title: "App R Shiny ML",
