@@ -1,18 +1,16 @@
-// Liste de tes projets
 const projects = [
   {
-    title: "🧠 Classification supervisée avec R et Python",
-    description: "Étude comparative de plusieurs méthodes de classification supervisée implémentées en R et Python sur divers jeux de données.",
-    link: "https://github.com/tonpseudo/classification-supervisee"
+    title: "Classification supervisée",
+    description: "Comparaison de méthodes de classification en R et Python.",
+    url: "docs/classification.pdf"
   },
   {
-    title: "📈 App R Shiny ML",
-    description: "Application R Shiny interactive permettant d’appliquer et visualiser des algorithmes de machine learning sur ses propres données.",
-    link: "https://github.com/tonpseudo/app-rshiny-ml"
+    title: "App R Shiny ML",
+    description: "Application interactive en R Shiny pour tester des modèles de machine learning.",
+    url: "https://shinyapps.io/monapp"
   }
 ];
 
-// Insertion dynamique dans le DOM
 const container = document.getElementById("project-list");
 
 projects.forEach(project => {
@@ -21,18 +19,16 @@ projects.forEach(project => {
   div.innerHTML = `
     <h3>${project.title}</h3>
     <p>${project.description}</p>
-    <a href="${project.link}" target="_blank">Voir sur GitHub →</a>
+    <a href="project.html?url=${encodeURIComponent(project.url)}&title=${encodeURIComponent(project.title)}">Voir le projet →</a>
   `;
   container.appendChild(div);
 });
 
-// Bouton retour en haut
+// Bouton retour haut
 const topBtn = document.getElementById("topBtn");
-
 window.onscroll = () => {
   topBtn.style.display = window.scrollY > 300 ? "block" : "none";
 };
-
 topBtn.onclick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
