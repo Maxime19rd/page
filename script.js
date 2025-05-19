@@ -7,7 +7,7 @@ const projects = [
   {
     title: "App R Shiny ML",
     description: "Application interactive en R Shiny pour tester des modèles de machine learning.",
-    url: "https://95dfada960ce43b380bf95cf44142f68.app.posit.cloud/p/a73c8409/"
+    url: "https://qnr4y4-maxime-rey0dor0ne.shinyapps.io/application/"
   }
 ];
 
