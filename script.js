@@ -1,14 +1,14 @@
-// Liste de projets (tu peux en ajouter autant que tu veux)
+// Liste de tes projets
 const projects = [
   {
-    title: "📊 Analyse Covid",
-    description: "Visualisation des données Covid avec Python, Pandas et Matplotlib.",
-    link: "https://github.com/tonpseudo/covid-data-analysis"
+    title: "🧠 Classification supervisée",
+    description: "Étude comparative de plusieurs méthodes de classification supervisée implémentées en R et Python sur divers jeux de données.",
+    link: "https://github.com/tonpseudo/classification-supervisee"
   },
   {
-    title: "🤖 Chatbot NLP",
-    description: "Assistant conversationnel en Python avec spaCy.",
-    link: "https://github.com/tonpseudo/chatbot-nlp"
+    title: "📈 App R Shiny ML",
+    description: "Application R Shiny interactive permettant d’appliquer et visualiser des algorithmes de machine learning sur ses propres données.",
+    link: "https://github.com/tonpseudo/app-rshiny-ml"
   }
 ];
 
