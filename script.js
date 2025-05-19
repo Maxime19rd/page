@@ -1,7 +1,7 @@
 // Liste de tes projets
 const projects = [
   {
-    title: "🧠 Classification supervisée",
+    title: "🧠 Classification supervisée avec R et Python",
     description: "Étude comparative de plusieurs méthodes de classification supervisée implémentées en R et Python sur divers jeux de données.",
     link: "https://github.com/tonpseudo/classification-supervisee"
   },
