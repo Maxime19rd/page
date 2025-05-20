@@ -3,14 +3,14 @@ const projects = [
     title: "Classification supervisée",
     description: "Méthodes de classification en R et Python.",
     url: "https://cel.hal.science/hal-04690630v2",
-    image: "image/classification.png",
+    image: "images/classification.png",
     date: "juillet 2024"
   },
   {
     title: "App R Shiny ML",
     description: "Application interactive en R Shiny pour tester des modèles de machine learning.",
     url: "https://qnr4y4-maxime-rey0dor0ne.shinyapps.io/application/",
-    image: "image/shinyapp.png",
+    image: "images/shinyapp.png",
     date: "Février 2025"
   }
 ];
