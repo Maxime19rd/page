@@ -21,7 +21,7 @@ projects.forEach(project => {
   const div = document.createElement("div");
   div.className = "project";
   div.innerHTML = `
-    <img src="${project.image}" alt="${project.title}" style="max-width: 100%; border-radius: 5px;" />
+    <img src="${project.image}" alt="${project.title}" class="project-img" />
     <h3>${project.title}</h3>
     <p><em>${project.date}</em></p>
     <p>${project.description}</p>
