@@ -1,14 +1,14 @@
 const projects = [
     {
     title: "Application R Shiny ML",
-    description: "Application interactive en R Shiny pour tester des modèles de machine learning.",
+    description: "Ce projet s'inscrit dans le cadre de l'exploration des techniques de classification en apprentissage automatique. L'application web, développée avec RShiny, permet d'importer et de prétraiter des jeux de données, d'explorer visuellement leurs caractéristiques, et d'appliquer différents modèles de classification (k‑NN, régression, forêts aléatoires, SVM, réseaux de neurones). Grâce à une interface interactive et intuitive, les utilisateurs peuvent ajuster les hyperparamètres et visualiser les performances des modèles en temps réel, facilitant ainsi la prise de décision et l'optimisation des méthodes.",
     image: "images/shinyapp.png",
     date: "Février 2025",
     url: "https://qnr4y4-maxime-rey0dor0ne.shinyapps.io/application/"
   },
   {
     title: "Méthodes de classification supervisée en R et Python",
-    description: "Méthodes de classification en R et Python.",
+    description: "Cette publication présente une étude comparative de méthodes de classification supervisée, mises en œuvre avec les langages R et Python. Plusieurs algorithmes sont explorés (k plus proches voisins, régression logistique, forêts aléatoires, SVM, réseaux de neurones) à travers cinq jeux de données de référence (Iris, Spam, MNIST, Titanic, Wine). L’approche est appliquée, reproductible, et destinée à un public intéressé par la data science et l’apprentissage automatique.",
     image: "images/classification.png",
     date: "Juillet 2024",
     url: "https://cel.hal.science/hal-04690630v2"
@@ -21,14 +21,20 @@ projects.forEach(project => {
   const div = document.createElement("div");
   div.className = "project";
 div.innerHTML = `
-  <img src="${project.image}" alt="aperçu du projet" class="project-img">
   <div class="project-content">
-    <h3>${project.title}</h3>
-    <p><strong>Date :</strong> ${project.date}</p>
-    <p>${project.description}</p>
-    <a href="project.html?url=${encodeURIComponent(project.url)}&title=${encodeURIComponent(project.title)}">Voir le projet →</a>
+    <img src="${project.image}" alt="${project.title}">
+    <div class="project-text">
+      <h3>${project.title}</h3>
+      <br>
+      <p class="project-date">${project.date}</p>
+      <br>
+      <p class="project-description">${project.description}</p>
+      <a href="project.html?url=${encodeURIComponent(project.url)}&title=${encodeURIComponent(project.title)}">Voir le projet</a>
+    </div>
   </div>
-`;  
+`;
+
+
 
   container.appendChild(div);
 });
