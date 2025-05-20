@@ -21,12 +21,17 @@ projects.forEach(project => {
   const div = document.createElement("div");
   div.className = "project";
   div.innerHTML = `
-    <h3>${project.title}</h3>
-    <p>${project.description}</p>
-    <a href="project.html?url=${encodeURIComponent(project.url)}&title=${encodeURIComponent(project.title)}">Voir le projet →</a>
+    <img src="${project.image}" alt="Aperçu ${project.title}" class="project-image">
+    <div class="project-content">
+      <h3>${project.title}</h3>
+      <p class="project-date">${project.date}</p>
+      <p>${project.description}</p>
+      <a href="project.html?url=${encodeURIComponent(project.url)}&title=${encodeURIComponent(project.title)}">Voir le projet →</a>
+    </div>
   `;
   container.appendChild(div);
 });
+
 
 // Bouton retour haut
 const topBtn = document.getElementById("topBtn");
