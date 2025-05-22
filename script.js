@@ -18,12 +18,10 @@ const projects = [
     description: "Cette publication présente une étude comparative de méthodes de classification supervisée, mises en œuvre avec les langages R et Python. Plusieurs algorithmes sont explorés (k plus proches voisins, régression logistique, forêts aléatoires, SVM, réseaux de neurones) à travers cinq jeux de données de référence (Iris, Spam, MNIST, Titanic, Wine). L’approche est appliquée, reproductible, et destinée à un public intéressé par la data science et l’apprentissage automatique.",
     image: "images/classification.png",
     date: "Juillet 2024",
-    url: "https://apps.powerapps.com/play/e/029e8b18-35a7-ef34-97bc-f759daae8efb/a/6f7bfc02-b823-4bc1-9ab3-24739a846276?tenantId=c4cb41a7-56e7-47fc-b399-169fa2eb2bf0&hint=8c11eebe-4dab-45a8-a6d8-125b66e1d4d1&sourcetime=1747922030114
-const container = document.getElementById("project-list");"
+    url: "https://apps.powerapps.com/play/e/029e8b18-35a7-ef34-97bc-f759daae8efb/a/6f7bfc02-b823-4bc1-9ab3-24739a846276?tenantId=c4cb41a7-56e7-47fc-b399-169fa2eb2bf0&hint=8c11eebe-4dab-45a8-a6d8-125b66e1d4d1&sourcetime=1747922030114"
   }
 ];
-
-
+const container = document.getElementById("project-list");
 
 
 projects.forEach(project => {
