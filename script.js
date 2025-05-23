@@ -37,7 +37,7 @@ div.innerHTML = `
       <br>
       <p class="project-description">${project.description}</p>
       <div class="project-footer">
-  <a href="URL_DU_PROJET" target="_blank">Voir le projet</a>
+  <a href=project.html target="_blank">Voir le projet</a>
 </div>
 
     </div>
