@@ -36,7 +36,10 @@ div.innerHTML = `
       <p class="project-date">${project.date}</p>
       <br>
       <p class="project-description">${project.description}</p>
-      <a href="project.html?url=${encodeURIComponent(project.url)}&title=${encodeURIComponent(project.title)}">Voir le projet</a>
+      <div class="project-footer">
+  <a href="URL_DU_PROJET" target="_blank">Voir le projet</a>
+</div>
+
     </div>
   </div>
 `;
