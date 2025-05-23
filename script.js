@@ -1,5 +1,5 @@
 const projects = [
-        {
+          {
     title: "App orano",
     description: "Cette publication présente une étude comparative de méthodes de classification supervisée, mises en œuvre avec les langages R et Python. Plusieurs algorithmes sont explorés (k plus proches voisins, régression logistique, forêts aléatoires, SVM, réseaux de neurones) à travers cinq jeux de données de référence (Iris, Spam, MNIST, Titanic, Wine). L’approche est appliquée, reproductible, et destinée à un public intéressé par la data science et l’apprentissage automatique.",
     image: "images/classification.png",
@@ -36,10 +36,7 @@ div.innerHTML = `
       <p class="project-date">${project.date}</p>
       <br>
       <p class="project-description">${project.description}</p>
-      <div class="project-footer">
-  <a href=project.html target="_blank">Voir le projet</a>
-</div>
-
+      <a href="project.html?url=${encodeURIComponent(project.url)}&title=${encodeURIComponent(project.title)}">Voir le projet</a>
     </div>
   </div>
 `;
