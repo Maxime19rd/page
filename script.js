@@ -27,31 +27,22 @@ const container = document.getElementById("project-list");
 projects.forEach(project => {
   const div = document.createElement("div");
   div.className = "project";
+div.innerHTML = `
+  <div class="project-content">
+    <img src="${project.image}" alt="${project.title}">
+    <div class="project-text">
+      <h3>${project.title}</h3>
+      <br>
+      <p class="project-date">${project.date}</p>
+      <br>
+      <p class="project-description">${project.description}</p>
+      <div class="project-footer">
+  <a href="URL_DU_PROJET" target="_blank">Voir le projet</a>
+</div>
 
-  const encodedTitle = encodeURIComponent(project.title);
-  const encodedUrl = encodeURIComponent(project.url);
-  const encodedDescription = encodeURIComponent(project.description);
-
-  div.innerHTML = `
-    <div class="project-content">
-      <img src="${project.image}" alt="${project.title}">
-      <div class="project-text">
-        <h3>${project.title}</h3>
-        <br>
-        <p class="project-date">${project.date}</p>
-        <br>
-        <p class="project-description">${project.description}</p>
-        <div class="project-footer">
-          <a href="project.html?title=${encodedTitle}&url=${encodedUrl}&description=${encodedDescription}" target="_blank">Voir le projet</a>
-        </div>
-      </div>
     </div>
-  `;
-
-  container.appendChild(div);
-});
-
-
+  </div>
+`;
 
 
 
