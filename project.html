@@ -4,19 +4,18 @@
   <meta charset="UTF-8">
   <title>Projet</title>
   <link rel="stylesheet" href="project.css">
-  <style>
-    iframe {
-      width: 100%;
-      height: 90vh;
-      border: none;
-    }
-  </style>
 </head>
 <body>
   <header>
     <h1 id="project-title">Chargement du projet...</h1>
   </header>
+
   <main>
+    <section id="info">
+      <h2>Présentation du projet</h2>
+      <p id="project-description">Chargement de la description...</p>
+    </section>
+
     <iframe id="iframe"></iframe>
   </main>
 
@@ -24,9 +23,11 @@
     const params = new URLSearchParams(window.location.search);
     const title = params.get("title") || "Projet";
     const url = params.get("url");
+    const description = params.get("description") || "Aucune description disponible.";
 
     document.getElementById("project-title").textContent = title;
     document.getElementById("iframe").src = url;
+    document.getElementById("project-description").textContent = description;
   </script>
 </body>
 </html>
