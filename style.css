@@ -95,11 +95,10 @@ h3 {
 .project-content img {
   width: auto;
   height: auto;
-  object-fit: cover;
-  border-radius: 8px;
+  object-fit: fill;
   flex-shrink: 0;
-  mask-image: linear-gradient(to left, black 70%, transparent);
-  -webkit-mask-image: linear-gradient(to left, black 70%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 70%);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 70%);
 }
 
 .project-text {
