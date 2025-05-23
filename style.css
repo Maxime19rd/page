@@ -85,7 +85,7 @@ h3 {
 }
 
 .project-content img {
-  width: 300px;
+  width: 400px;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -176,3 +176,36 @@ footer {
   transform: scale(1.15);
   filter: none;
 }
+
+/* Animation pour le nom : monte depuis le bas */
+#animated-name {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: riseFadeIn 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Animation pour le texte : descend depuis le haut */
+#animated-subtext {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fallFadeIn 1.2s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+/* Animations */
+@keyframes riseFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fallFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
