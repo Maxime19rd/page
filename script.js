@@ -28,9 +28,9 @@ projects.forEach(project => {
   const div = document.createElement("div");
   div.className = "project";
 
-  // On encode l'URL et le titre pour les mettre en paramètres GET
   const encodedTitle = encodeURIComponent(project.title);
   const encodedUrl = encodeURIComponent(project.url);
+  const encodedDescription = encodeURIComponent(project.description);
 
   div.innerHTML = `
     <div class="project-content">
@@ -42,7 +42,7 @@ projects.forEach(project => {
         <br>
         <p class="project-description">${project.description}</p>
         <div class="project-footer">
-          <a href="project.html?title=${encodedTitle}&url=${encodedUrl}" target="_blank">Voir le projet</a>
+          <a href="project.html?title=${encodedTitle}&url=${encodedUrl}&description=${encodedDescription}" target="_blank">Voir le projet</a>
         </div>
       </div>
     </div>
@@ -50,6 +50,7 @@ projects.forEach(project => {
 
   container.appendChild(div);
 });
+
 
 
 
