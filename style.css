@@ -50,20 +50,19 @@ h3 {
 
 #project-list {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
 .project {
   display: flex;
   border-radius: 0px;
-  padding: 1rem;
+  padding: 0.8rem;
   gap: 1.2rem;
   align-items: flex-start;
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.8s ease forwards;
-
   background: transparent;
   transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
 }
@@ -93,13 +92,13 @@ h3 {
 }
 
 .project-content img {
-  width: 400px;
+  width: 300px;
   height: auto;
   object-fit: fill;
   border-radius: 8px;
   flex-shrink: 0;
-  mask-image: linear-gradient(to left, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.4) 20%, black 50%, black 100%);
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.4) 20%, black 50%, black 100%);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.4) 20%, black 50%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.4) 20%, black 50%, black 100%);
 }
 
 
