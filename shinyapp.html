@@ -2,36 +2,31 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Projet</title>
+  <title>Application R Shiny ML</title>
   <link rel="stylesheet" href="project.css">
 </head>
 <body>
-<header>
-  <div class="header-container">
-    <a href="index.html" class="back-button">← Retour</a>
-    <h1 id="project-title">Chargement du projet...</h1>
-  </div>
-</header>
-  
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="back-button">← Retour</a>
+      <h1 id="project-title">Application R Shiny ML</h1>
+    </div>
+  </header>
 
   <main>
     <section id="info">
       <h2>Présentation du projet</h2>
-      <p id="project-description">Chargement de la description...</p>
+      <p id="project-description">
+        Ce projet a été réalisé dans le cadre de mon Master 2. Il s'agit d'une application <strong>R Shiny</strong> permettant de tester et comparer différentes méthodes de classification supervisée sur des jeux de données chargés par l'utilisateur. <br><br>
+        L'utilisateur peut sélectionner un algorithme (forêt aléatoire, SVM, k-NN, etc.), ajuster les hyperparamètres, visualiser les performances (accuracy, matrice de confusion, etc.) et comparer les résultats. L’objectif est de rendre ces méthodes accessibles et interactives à travers une interface intuitive.
+      </p>
     </section>
 
-    <iframe id="iframe"></iframe>
+    <iframe
+      id="iframe"
+      src="https://qnr4y4-maxime-rey0dor0ne.shinyapps.io/application/"
+      style="width: 100%; height: 700px; border: none; border-radius: 8px; margin-top: 20px;">
+    </iframe>
   </main>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const title = params.get("title") || "Projet";
-    const url = params.get("url");
-    const description = params.get("description") || "Aucune description disponible.";
-
-    document.getElementById("project-title").textContent = title;
-    document.getElementById("iframe").src = url;
-    document.getElementById("project-description").textContent = description;
-  </script>
 </body>
 </html>
