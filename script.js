@@ -1,8 +1,8 @@
 const projects = [
           {
-    title: "App orano",
-    description: "Cette publication présente une étude comparative de méthodes de classification supervisée, mises en œuvre avec les langages R et Python. Plusieurs algorithmes sont explorés (k plus proches voisins, régression logistique, forêts aléatoires, SVM, réseaux de neurones) à travers cinq jeux de données de référence (Iris, Spam, MNIST, Titanic, Wine). L’approche est appliquée, reproductible, et destinée à un public intéressé par la data science et l’apprentissage automatique.",
-    image: "images/classification.png",
+    title: "Application d’accès centralisé aux rapports Power BI",
+    description: "Application Power Apps conçue pour centraliser l’accès aux rapports Power BI de l’entreprise. Elle offre une navigation fluide grâce à des filtres par périmètre et par catégorie, un affichage dynamique des contacts métiers et un historique des versions. L’application permet également de mettre en favoris les rapports les plus consultés. Elle vise à améliorer l’accessibilité, la documentation et la valorisation des rapports Power BI.",
+    image: "images/apporano.png",
     date: "Juillet 2024",
     url: "https://apps.powerapps.com/play/e/029e8b18-35a7-ef34-97bc-f759daae8efb/a/6f7bfc02-b823-4bc1-9ab3-24739a846276?tenantId=c4cb41a7-56e7-47fc-b399-169fa2eb2bf0&hint=8c11eebe-4dab-45a8-a6d8-125b66e1d4d1&sourcetime=1747922030114"
   },
