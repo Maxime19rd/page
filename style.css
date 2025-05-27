@@ -28,12 +28,23 @@ header {
 .header-text p {
   font-size: 1.2em;
   margin-top: 10px;
-  animation: fadeInText 2s ease-in-out;
+  animation: slideIn2 1.5s ease-in-out;
 }
 
 @keyframes slideIn {
   from {
     transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn2 {
+  from {
+    transform: translateY(30px);
     opacity: 0;
   }
   to {
@@ -106,9 +117,8 @@ p {
   padding: 1rem;
   gap: 1.2rem;
   opacity: 0;
-  animation: slideIn 1.5s ease-in-out;
+  animation: fadeInProject 1s ease forwards;
   will-change: transform;
-  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInProject {
