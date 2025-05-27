@@ -23,9 +23,9 @@ header h1 {
 
 /* Conteneur principal */
 main {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  width: 100%;
+  padding: 0 40px; /* marge intérieure à gauche et à droite */
+  margin: 40px 0; /* espace en haut et en bas */
 }
 
 /* Section info du projet */
@@ -47,12 +47,7 @@ main {
   }
 }
 
-#info h2 {
-  border-left: 4px solid #00e5ff;
-  padding-left: 10px;
-  color: #00e5ff;
-  margin-bottom: 1rem;
-}
+
 
 #info p {
   font-size: 1.1rem;
@@ -64,11 +59,20 @@ main {
 
 /* Iframe */
 iframe {
-  width: 100%;
+  width: 90%;
   height: 85vh;
   border: none;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  display:block;
+  margin 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement */
+  height: 90vh;            /* hauteur du conteneur */
 }
 
 .header-container {
@@ -82,27 +86,37 @@ iframe {
 }
 
 .back-button {
-  position: absolute;
-  left: 0;
-  background: linear-gradient(135deg, #7b2ff7, #00c6ff);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: bold;
+  background: #004a75; /* bleu foncé en accord avec l'entête */
+  color: white;        /* texte blanc */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-  font-size: 0.95rem;
-  transition: background 0.3s, transform 0.2s;
-  margin-left: 0;
 }
 
 .back-button:hover {
-  background: linear-gradient(135deg, #512da8, #0086c3);
+  background-color: #005f9e; /* un bleu un peu plus clair */
   transform: translateY(-2px);
+  color: white;              /* texte toujours blanc */
+  box-shadow: 0 6px 15px rgba(0, 95, 158, 0.7);
+  text-decoration: none;
 }
+
+
 
 header h1 {
   flex: 1;
   text-align: center;
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #00bcd4;
 }
