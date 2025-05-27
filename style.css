@@ -108,6 +108,7 @@ p {
   opacity: 0;
   animation: slideIn 1.5s ease-in-out;
   will-change: transform;
+  animation-fill-mode: forwards;
 }
 
 @keyframes fadeInProject {
