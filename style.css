@@ -52,9 +52,12 @@ header {
 }
 
 main {
-  width: 90%;
-  margin: 40px 0;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 40px;
+  width: 100%;
 }
+
 
 section {
   margin-bottom: 50px;
