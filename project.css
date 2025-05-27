@@ -62,7 +62,7 @@ iframe {
   width: 90%;
   height: 85vh;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 0 12px rgba(0,0,0,0.4);
   display:block;
   margin 0 auto;
@@ -120,3 +120,89 @@ h2 {
   margin-bottom: 20px;
   color: #00bcd4;
 }
+
+/* Section supplémentaire (tech, demo, screenshots) */
+section {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+section ul {
+  padding-left: 2em;
+}
+
+section ul li {
+  margin-bottom: 0.6rem;
+  color: #ccc;
+  font-size: 1.05rem;
+}
+
+/* Lien vers shinyapps */
+a {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #1de9b6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #1a1a1a;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* Captures d'écran */
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.screenshots-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.screenshots-grid img:hover {
+  transform: scale(1.03);
+}
+
+.external-button {
+  background: #004a75; /* bleu foncé en accord avec l'entête */
+  color: white;        /* texte blanc */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.external-button:hover {
+  background-color: #005f9e; /* un bleu un peu plus clair */
+  transform: translateY(-2px);
+  color: white;              /* texte toujours blanc */
+  box-shadow: 0 6px 15px rgba(0, 95, 158, 0.7);
+  text-decoration: none;
+
+  
+
+
+
