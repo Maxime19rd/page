@@ -23,8 +23,7 @@ header h1 {
 
 /* Conteneur principal */
 main {
-  width: 100%;
-  padding: 0 40px; /* marge intérieure à gauche et à droite */
+  width: 90%;
   margin: 40px 0; /* espace en haut et en bas */
 }
 
