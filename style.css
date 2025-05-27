@@ -33,7 +33,7 @@ header {
 
 @keyframes slideIn {
   from {
-    transform: translateY(-100px);
+    transform: translateY(-30px);
     opacity: 0;
   }
   to {
@@ -106,7 +106,7 @@ p {
   padding: 1rem;
   gap: 1.2rem;
   opacity: 0;
-  animation: fadeInProject 1s ease forwards;
+  animation: slideIn 1.5s ease-in-out;
   will-change: transform;
 }
 
