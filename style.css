@@ -106,7 +106,22 @@ p {
   cursor: pointer;
   padding:1rem;
   gap:1.2rem;
+  opacity:0;
+  animation:fadeIn 1s ease forwards;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 .project:hover {
   transform: scale(1.03); /* Effet de zoom */
