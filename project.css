@@ -21,11 +21,13 @@ header h1 {
   margin: 0;
 }
 
-/* Conteneur principal */
 main {
-  width: 90%;
-  margin: 40px 0; /* espace en haut et en bas */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 40px;
+  width: 100%;
 }
+
 
 /* Section info du projet */
 #info {
