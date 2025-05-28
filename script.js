@@ -1,15 +1,15 @@
 const projects = [
           {
     title: "Application d’accès centralisé aux rapports Power BI",
-    description: "Application Power Apps conçue pour centraliser l’accès aux rapports Power BI de l’entreprise. Elle offre une navigation fluide grâce à des filtres par périmètre et par catégorie, un affichage dynamique des contacts métiers et un historique des versions. L’application permet également de mettre en favoris les rapports les plus consultés. Elle vise à améliorer l’accessibilité, la documentation et la valorisation des rapports Power BI.",
+    description: "Application Power Apps conçue pour centraliser l’accès aux rapports Power BI de l’entreprise. Elle offre une navigation fluide grâce à différents filtres, un affichage dynamique des métadonnées et un historique des versions. L’application permet également de mettre en favoris les rapports les plus consultés. Elle vise à améliorer l’accessibilité, la documentation et la valorisation des rapports Power BI.",
     image: "images/apporano.png",
-    date: "Juillet 2024",
+    date: "Mai 2025",
     url: "",
     page: "apporano.html "              
   },
     {
     title: "Application R Shiny ML",
-    description: "Ce projet s'inscrit dans le cadre de l'exploration des techniques de classification en apprentissage automatique. L'application web, développée avec RShiny, permet d'importer et de prétraiter des jeux de données, d'explorer visuellement leurs caractéristiques, et d'appliquer différents modèles de classification (k‑NN, régression, forêts aléatoires, SVM, réseaux de neurones). Grâce à une interface interactive et intuitive, les utilisateurs peuvent ajuster les hyperparamètres et visualiser les performances des modèles en temps réel, facilitant ainsi la prise de décision et l'optimisation des méthodes.",
+    description: "Ce projet s'inscrit dans le cadre de l'exploration des techniques de classification en apprentissage automatique. L'application web, développée avec RShiny, permet d'importer et de prétraiter des jeux de données, d'explorer visuellement leurs caractéristiques, et d'appliquer différents modèles de classification supervisée.",
     image: "images/shinyapp.png",
     date: "Février 2025",
     url: "https://qnr4y4-maxime-rey0dor0ne.shinyapps.io/application/",
@@ -17,7 +17,7 @@ const projects = [
   },
   {
     title: "Méthodes de classification supervisée en R et Python",
-    description: "Cette publication présente une étude comparative de méthodes de classification supervisée, mises en œuvre avec les langages R et Python. Plusieurs algorithmes sont explorés (k plus proches voisins, régression logistique, forêts aléatoires, SVM, réseaux de neurones) à travers cinq jeux de données de référence (Iris, Spam, MNIST, Titanic, Wine). L’approche est appliquée, reproductible, et destinée à un public intéressé par la data science et l’apprentissage automatique.",
+    description: "Cette publication présente une étude comparative de méthodes de classification supervisée, mises en œuvre avec les langages R et Python. Plusieurs algorithmes sont explorés à travers cinq jeux de données de référence. L’approche est appliquée, reproductible, et destinée à un public intéressé par la data science.",
     image: "images/classification.png",
     date: "Juillet 2024",
     url: "https://cel.hal.science/hal-04690630v2",
@@ -33,12 +33,11 @@ projects.forEach(project => {
 
   div.innerHTML = `
     <div class="project-content" onclick="window.location.href='${project.page}'">
-      <img src="${project.image}" alt="${project.title}">
+      
       <div class="project-text">
         <h3>${project.title}</h3>
-        <br>
         <p class="project-date">${project.date}</p>
-        <br>
+        <img src="${project.image}" alt="${project.title}">
         <p class="project-description">${project.description}</p>
       </div>
     </div>
