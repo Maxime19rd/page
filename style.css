@@ -63,7 +63,7 @@ header {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -116,7 +116,7 @@ p {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  padding: 3rem;
+  padding: 1.5rem;
   gap: 1.2rem;
   opacity: 0;
   animation: fadeInProject 1s ease forwards;
@@ -135,26 +135,18 @@ p {
 .project:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  filter: brightness(1.1);
+  background-color: #242424;
 }
 
-.project-content {
-  display: grid;
-  gap: 1rem;
-  align-items: center;
+.project-card {
+  display: flex;
+  flex-direction: column;
 }
 
-.project-content img {
-  width: 400px;
-  height: 100%;
-}
-
-.project-text {
-  flex: 1;
-}
-
-.project-text h3 {
-  font-size: 1.1em;
-  margin-bottom: 10px;
+.project-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
   color: #F0F3F4;
 }
 
@@ -162,13 +154,28 @@ p {
   font-style: italic;
   font-size: 0.95em;
   color: #aaaaaa;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.project-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.project-content img {
+  width: 300px;
+  height: 100%;
+}
+
+.project-text {
+  flex: 1;
 }
 
 .project-description {
   text-align: justify;
   text-indent: 2em;
-  margin: 0.5rem 0 1rem;
+  margin: 0rem 0 0rem;
   line-height: 1.6;
   color: #ccc;
   margin: 0;
