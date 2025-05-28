@@ -31,17 +31,19 @@ projects.forEach(project => {
   const div = document.createElement("div");
   div.className = "project";
 
-  div.innerHTML = `
-    <div class="project-content" onclick="window.location.href='${project.page}'">
-      
+div.innerHTML = `
+  <div class="project-card" onclick="window.location.href='${project.page}'">
+    <h3 class="project-title">${project.title}</h3>
+    <p class="project-date">${project.date}</p>
+    <div class="project-content">
+      <img src="${project.image}" alt="${project.title}" class="project-image">
       <div class="project-text">
-        <h3>${project.title}</h3>
-        <p class="project-date">${project.date}</p>
-        <img src="${project.image}" alt="${project.title}">
         <p class="project-description">${project.description}</p>
       </div>
     </div>
-  `;
+  </div>
+`;
+
 
   container.appendChild(div);
 });
