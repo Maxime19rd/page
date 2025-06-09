@@ -21,12 +21,12 @@ header {
 }
 
 .header-text h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   animation: slideIn 1.5s ease-in-out;
 }
 
 .header-text p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-top: 10px;
   animation: slideIn2 1.5s ease-in-out;
 }
@@ -69,18 +69,18 @@ main {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 1.8em;
-  margin-bottom: 20px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
   color: #00bcd4;
 }
 
 p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
+  font-size: 1em;
+  margin-bottom: 10px;
   text-indent: 2em;
 }
 
@@ -99,14 +99,14 @@ p {
 }
 
 .contact-info img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* Project list */
 #project-list {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 /* Card */
@@ -116,7 +116,7 @@ p {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  padding: 1.5rem;
+  padding: 1.2rem;
   gap: 1.2rem;
   opacity: 0;
   animation: fadeInProject 1s ease forwards;
@@ -135,7 +135,6 @@ p {
 .project:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
-  filter: brightness(1.1);
   background-color: #242424;
 }
 
@@ -145,7 +144,7 @@ p {
 }
 
 .project-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 5px;
   color: #F0F3F4;
 }
@@ -164,7 +163,7 @@ p {
 }
 
 .project-content img {
-  width: 300px;
+  width: 200px;
   height: 100%;
 }
 
@@ -179,7 +178,7 @@ p {
   line-height: 1.6;
   color: #ccc;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 /* Bouton retour haut */
