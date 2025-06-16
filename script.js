@@ -1,4 +1,12 @@
 const projects = [
+    {
+  title: "Suivi des vestiaires sur site industriel avec Power BI",
+  description: "Ce projet consiste en la création d’un tableau de bord Power BI permettant de suivre l’occupation et l’état des vestiaires sur un site industriel. Il facilite la gestion opérationnelle en offrant une visualisation claire des données en temps réel. L’objectif est d’optimiser l’utilisation des installations et d’anticiper les besoins en maintenance.",
+  image: "images/vestiaires.png",
+  date: "Juin 2025",
+  url: "https://tonlienouportfolio.com/vestiaires",  // Remplace ce lien par le bon
+  page: "vestiaires.html"
+},
           {
     title: "Application d’accès centralisé aux rapports Power BI",
     description: "Application Power Apps conçue pour centraliser l’accès aux rapports Power BI de l’entreprise. Elle offre une navigation fluide grâce à différents filtres, un affichage dynamique des métadonnées et un historique des versions. L’application permet également de mettre en favoris les rapports les plus consultés. Elle vise à améliorer l’accessibilité, la documentation et la valorisation des rapports Power BI.",
@@ -23,6 +31,7 @@ const projects = [
     url: "https://cel.hal.science/hal-04690630v2",
     page: "ml.html"        
   }
+
 ];
 const container = document.getElementById("project-list");
 
