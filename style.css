@@ -111,8 +111,8 @@ p {
 /* Project list */
 #project-list {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(1, 1fr);
+  gap: 1.2rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Card */
@@ -186,7 +186,7 @@ p {
   line-height: 1.6;
   color: #ccc;
   margin: 0;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 /* Bouton retour haut */
