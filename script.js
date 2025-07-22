@@ -41,17 +41,14 @@ projects.forEach(project => {
   div.className = "project";
 
 div.innerHTML = `
-  <div class="project-card" onclick="window.location.href='${project.page}'">
+  <div class="project-card" onclick="window.location.href='${project.url || project.page}'" role="button" aria-label="Voir le projet ${project.title}">
     <h3 class="project-title">${project.title}</h3>
     <p class="project-date">${project.date}</p>
-    <div class="project-content">
-      <img src="${project.image}" alt="${project.title}" class="project-image">
-      <div class="project-text">
-        <p class="project-description">${project.description}</p>
-      </div>
-    </div>
+    <img src="${project.image}" alt="${project.title}" class="project-image">
+    <p class="project-description">${project.description}</p>
   </div>
 `;
+
 
 
   container.appendChild(div);
