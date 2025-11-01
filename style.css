@@ -1,0 +1,228 @@
+/* ====== GLOBAL ====== */
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #222;
+}
+
+h1, h2, h3, h4 {
+  color: #1b3b6f;
+  margin-bottom: 10px;
+}
+
+.section {
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ====== HEADER ====== */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar a {
+  color: #1b3b6f;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0077cc;
+}
+
+/* ====== ABOUT ====== */
+.about p {
+  line-height: 1.7;
+  color: #444;
+  max-width: 800px;
+}
+
+/* ====== PROJECTS ====== */
+.projects-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 30px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.project-card {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 15px 20px;
+}
+
+/* ====== BUTTON ====== */
+.btn {
+  background-color: #1b3b6f;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2c4f90;
+}
+
+/* ====== SKILLS ====== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* ====== CV ====== */
+.cv {
+  text-align: center;
+}
+
+/* ====== CONTACT ====== */
+.contact {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact a {
+  color: #1b3b6f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #0077cc;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #f0f2f7;
+  color: #555;
+  font-size: 0.9em;
+}
+
+/* ====== PROJETS - défilement horizontal continu ====== */
+.projects-carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  white-space: nowrap; /* empêche les retours à la ligne */
+}
+
+.projects-track {
+  display: inline-flex; /* force tout sur une seule ligne */
+  gap: 20px;
+  animation: scrollProjects 40s linear infinite;
+}
+
+@keyframes scrollProjects {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* style cartes */
+.project-card {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;           /* empêche le texte de dépasser */
+  white-space: normal;        /* permet au texte de revenir à la ligne */
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 15px 20px;
+}
+
+.project-content p {
+  overflow: hidden;
+  text-overflow: ellipsis;    /* ajoute “…” si le texte est trop long */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;      /* limite à 3 lignes */
+  -webkit-box-orient: vertical;
+}
+
+/* stop au survol */
+.projects-carousel:hover .projects-track {
+  animation-play-state: paused;
+}
+
+.project-card:last-of-type {
+  margin-right: 30px; /* espace avant que la série ne recommence */
+}
+
