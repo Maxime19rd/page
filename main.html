@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | [Ton Nom]</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <!-- En-tête -->
+  <header class="header">
+    <h1>Maxime Rey-Dorène</h1>
+    <nav class="navbar">
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#skills">Compétences</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Section À propos -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>À propos</h2>
+      <p>
+        Je suis diplômé en <strong>Mathématiques appliquées et Data Science</strong>,
+        passionné par la création d’outils décisionnels interactifs et la mise en valeur des données.
+        Mon parcours m’a conduit à développer des applications sur <strong>Power Apps</strong>,
+        des tableaux de bord <strong>Power BI</strong>, ainsi que des solutions analytiques en
+        <strong>R</strong> et <strong>Python</strong>.
+      </p>
+      <p>
+        Mon objectif est de concevoir des solutions robustes, ergonomiques et centrées sur l’utilisateur,
+        tout en valorisant la donnée comme levier d’aide à la décision.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <h2>Projets</h2>
+
+    <div class="projects-carousel">
+      <div class="projects-track">
+        <!-- Les cartes -->
+        <div class="project-card">
+          <img src="images/shiny-app.jpg" alt="R Shiny" />
+          <div class="project-content">
+            <h3>Application R Shiny</h3>
+            <p>Exploration interactive de modèles de classification.</p>
+            <a href="projet-shiny.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/powerapps.jpg" alt="Power Apps" />
+          <div class="project-content">
+            <h3>Portail Power Apps</h3>
+            <p>Application centralisant les rapports Power BI.</p>
+            <a href="projet-powerapps.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/powerbi.jpg" alt="Power BI" />
+          <div class="project-content">
+            <h3>Tableaux de bord Power BI</h3>
+            <p>Automatisation des rapports et DAX.</p>
+            <a href="projet-powerbi.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/classification.jpg" alt="Classification" />
+          <div class="project-content">
+            <h3>Classification supervisée</h3>
+            <p>Comparaison de cinq méthodes en R et Python.</p>
+            <a href="projet-classif.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/decisiontools.jpg" alt="Decision Tools" />
+          <div class="project-content">
+            <h3>Outils décisionnels</h3>
+            <p>Centralisation d’applications internes avec Power Apps.</p>
+            <a href="projet-decisiontools.html" class="btn">Voir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deuxième bande pour l’effet de boucle continue -->
+      <div class="projects-track clone">
+        <!-- même contenu que ci-dessus -->
+        <div class="project-card">
+          <img src="images/shiny-app.jpg" alt="R Shiny" />
+          <div class="project-content">
+            <h3>Application R Shiny</h3>
+            <p>Exploration interactive de modèles de classification.</p>
+            <a href="projet-shiny.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/powerapps.jpg" alt="Power Apps" />
+          <div class="project-content">
+            <h3>Portail Power Apps</h3>
+            <p>Application centralisant les rapports Power BI.</p>
+            <a href="projet-powerapps.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/powerbi.jpg" alt="Power BI" />
+          <div class="project-content">
+            <h3>Tableaux de bord Power BI</h3>
+            <p>Automatisation des rapports et DAX.</p>
+            <a href="projet-powerbi.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/classification.jpg" alt="Classification" />
+          <div class="project-content">
+            <h3>Classification supervisée</h3>
+            <p>Comparaison de cinq méthodes en R et Python.</p>
+            <a href="projet-classif.html" class="btn">Voir</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/decisiontools.jpg" alt="Decision Tools" />
+          <div class="project-content">
+            <h3>Outils décisionnels</h3>
+            <p>Centralisation d’applications internes avec Power Apps.</p>
+            <a href="projet-decisiontools.html" class="btn">Voir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Section Compétences -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <img src="images/skills/python.png" alt="Python" />
+          <h4>Python</h4>
+          <p>Analyse de données, visualisation (Pandas, Matplotlib) et apprentissage automatique (Scikit-learn).</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/skills/r.png" alt="R" />
+          <h4>R / Shiny</h4>
+          <p>Applications interactives et analyses statistiques avancées.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/skills/powerbi.png" alt="Power BI" />
+          <h4>Power BI</h4>
+          <p>Modélisation, DAX, Power Query et automatisation de rapports décisionnels.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/skills/powerapps.png" alt="Power Apps" />
+          <h4>Power Apps</h4>
+          <p>Création d’applications métiers connectées à SharePoint et Power BI.</p>
+        </div>
+
+        <div class="skill-card">
+          <img src="images/skills/sql.png" alt="SQL" />
+          <h4>SQL</h4>
+          <p>Extraction et gestion de données relationnelles pour analyses et reporting.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CV -->
+  <section id="cv" class="section cv">
+    <div class="container">
+      <h2>Mon CV</h2>
+      <a href="documents/CV.pdf" class="btn" target="_blank">Télécharger le CV</a>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>📧 <a href="mailto:ton.email@example.com">ton.email@example.com</a></p>
+      <p>💼 <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a></p>
+      <p>🐙 <a href="https://github.com/tonpseudo" target="_blank">GitHub</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 [Ton Nom] — Portfolio créé avec ❤️ et déployé sur GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
