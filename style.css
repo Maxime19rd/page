@@ -72,7 +72,6 @@ h1, h2, h3, h4 {
 }
 
 .projects-carousel {
-  overflow: hidden;
   width: 100%;
   position: relative;
   margin-top: 30px;
@@ -90,7 +89,7 @@ h1, h2, h3, h4 {
   100% { transform: translateX(-50%); }
 }
 
-/* ====== CARDS ====== */
+/* ====== PROJECT CARDS ====== */
 .project-card {
   display: inline-block;
   flex: 0 0 auto;
@@ -128,7 +127,7 @@ h1, h2, h3, h4 {
   -webkit-box-orient: vertical;
 }
 
-/* stop au survol */
+/* stop animation au survol */
 .projects-carousel:hover .projects-track {
   animation-play-state: paused;
 }
@@ -144,8 +143,8 @@ h1, h2, h3, h4 {
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
   font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
