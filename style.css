@@ -12,12 +12,7 @@ h1, h2, h3, h4 {
 }
 
 .section {
-  width: 90vw;                /* largeur proportionnelle à l’écran */
-  max-width: 1200px;          /* limite la largeur sur grand écran */
-  margin: 20px auto;          /* centre horizontalement avec un petit espacement vertical */
-  padding: 40px 20px;
-  background: rgba(255, 255, 255, 1); /* fond semi-transparent pour laisser apparaître le dégradé */
-  border-radius: 15px;
+  padding: 20px 20px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -72,6 +67,7 @@ h1, h2, h3, h4 {
 }
 
 .projects-carousel {
+  overflow: hidden;
   width: 100%;
   position: relative;
   margin-top: 30px;
@@ -89,7 +85,7 @@ h1, h2, h3, h4 {
   100% { transform: translateX(-50%); }
 }
 
-/* ====== PROJECT CARDS ====== */
+/* ====== CARDS ====== */
 .project-card {
   display: inline-block;
   flex: 0 0 auto;
@@ -127,7 +123,7 @@ h1, h2, h3, h4 {
   -webkit-box-orient: vertical;
 }
 
-/* stop animation au survol */
+/* stop au survol */
 .projects-carousel:hover .projects-track {
   animation-play-state: paused;
 }
@@ -143,8 +139,8 @@ h1, h2, h3, h4 {
   text-decoration: none;
   padding: 8px 14px;
   border-radius: 8px;
-  font-weight: 500;
   transition: background-color 0.3s ease;
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -165,7 +161,7 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .skill-card {
