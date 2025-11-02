@@ -34,7 +34,7 @@ const projects = {
 
 // ======= Récupération du projet depuis l'URL =======
 const urlParams = new URLSearchParams(window.location.search);
-const projetKey = urlParams.get('projet') || 'shiny';
+const projetKey = urlParams.get('id');
 const project = projects[projetKey];
 
 if (project) {
