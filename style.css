@@ -115,9 +115,9 @@ h1, h2, h3, h4 {
 
 .project-card {
   flex: 0 0 clamp(260px, 30vw, 320px);
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  #border-radius: 15px;
+  #box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
   transform: scale(0.9);
