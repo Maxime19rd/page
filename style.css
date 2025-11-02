@@ -98,19 +98,21 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   overflow: hidden;
   margin-top: 40px;
-  width: 100%;
 }
 
 .carousel-track {
   display: flex;
   gap: 30px;
   transition: transform 0.6s ease;
+  padding: 20px 0;
 }
 
+/* ====== PROJECT CARD ====== */
 .project-card {
-  flex: 0 0 300px;
+  flex: 0 0 clamp(260px, 30vw, 320px); /* s’adapte à l’écran */
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -122,7 +124,7 @@ h1, h2, h3, h4 {
 }
 
 .project-card.active {
-  transform: scale(1.1);
+  transform: scale(1.05);
   opacity: 1;
   z-index: 2;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -201,4 +203,61 @@ h1, h2, h3, h4 {
 
 .carousel-btn.next {
   right: 15px;
+}
+/* ====== SKILLS ====== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.skill-card {
+  background: linear-gradient(135deg, #ffffff, #f0f4f8);
+  border-radius: 15px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* ====== CV ====== */
+.cv {
+  text-align: center;
+}
+
+/* ====== CONTACT ====== */
+.contact {
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact a {
+  color: #1b3b6f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #0077cc;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #f0f2f7;
+  color: #555;
+  font-size: 0.9em;
 }
