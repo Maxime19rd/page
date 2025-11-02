@@ -60,6 +60,39 @@ h1, h2, h3, h4 {
   max-width: 800px;
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 300px;
+  opacity: 0.75; /* légère transparence */
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.about-image img:hover {
+  opacity: 0.9;
+}
+
+
 /* ====== PROJECTS ====== */
 .projects-container,
 .projects-carousel {
