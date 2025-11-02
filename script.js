@@ -13,3 +13,36 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe chaque section
 sections.forEach(section => observer.observe(section));
+
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".carousel-track");
+  const cards = Array.from(track.children);
+  const btnNext = document.querySelector(".carousel-btn.next");
+  const btnPrev = document.querySelector(".carousel-btn.prev");
+
+  let index = 0;
+
+  function updateCarousel() {
+    const cardWidth = cards[0].offsetWidth + 30; // marge de 30px
+    const offset = -index * cardWidth + (track.parentElement.offsetWidth / 2 - cardWidth / 2);
+    track.style.transform = `translateX(${offset}px)`;
+
+    cards.forEach((card, i) => {
+      card.classList.toggle("active", i === index);
+    });
+  }
+
+  btnNext.addEventListener("click", () => {
+    index = (index + 1) % cards.length;
+    updateCarousel();
+  });
+
+  btnPrev.addEventListener("click", () => {
+    index = (index - 1 + cards.length) % cards.length;
+    updateCarousel();
+  });
+
+  window.addEventListener("resize", updateCarousel);
+  updateCarousel();
+});
+
