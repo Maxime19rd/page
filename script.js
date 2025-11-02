@@ -23,8 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
   let index = 0;
 
   function updateCarousel() {
-    const cardWidth = cards[0].offsetWidth + 30; // marge de 30px
-    const offset = -index * cardWidth + (track.parentElement.offsetWidth / 2 - cardWidth / 2);
+    const cardWidth = cards[0].offsetWidth + 30;
+    const visibleWidth = track.parentElement.offsetWidth;
+    const offset = -index * cardWidth + (visibleWidth / 2 - cardWidth / 2);
+
     track.style.transform = `translateX(${offset}px)`;
 
     cards.forEach((card, i) => {
@@ -45,4 +47,3 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", updateCarousel);
   updateCarousel();
 });
-
