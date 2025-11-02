@@ -119,7 +119,14 @@ h1, h2, h3, h4 {
   text-align: center;
   transform: scale(0.9);
   opacity: 0.6;
-  transition: transform 0.6s ease, opacity 0.6s ease;
+  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+}
+
+.project-card.active {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 2;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .project-card img {
@@ -128,21 +135,39 @@ h1, h2, h3, h4 {
   object-fit: cover;
 }
 
-.project-card.active {
-  transform: scale(1.1);
-  opacity: 1;
-  z-index: 2;
+.project-content {
+  padding: 15px 20px 25px;
 }
 
 .project-card h3 {
   color: #1b3b6f;
   margin: 10px 0 5px;
+  font-size: 1.1rem;
 }
 
 .project-card p {
   color: #444;
-  margin: 0 15px 15px;
+  margin: 0 0 15px;
   font-size: 0.95rem;
+  line-height: 1.4;
+  min-height: 60px;
+}
+
+/* ====== BUTTON (voir projet) ====== */
+.btn {
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
 }
 
 /* ====== ARROWS ====== */
@@ -178,6 +203,7 @@ h1, h2, h3, h4 {
 .carousel-btn.next {
   right: 15px;
 }
+
 
 
 /* ====== CARDS ====== */
