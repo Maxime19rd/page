@@ -46,7 +46,7 @@ if (project) {
   // Titre
   document.getElementById("project-title").textContent = project.title;
 
-  document.getElementbyId("project-contexte").textContent = project.contexte;
+  document.getElementById("project-contexte").textContent = project.contexte;
 
   // Description
   document.getElementById("project-description").textContent = project.description;
