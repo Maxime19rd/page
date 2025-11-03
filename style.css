@@ -118,8 +118,8 @@ h1, h2, h3, h4 {
 .project-card {
   flex: 0 0 clamp(260px, 30vw, 320px); /* s’adapte à l’écran */
   background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   text-align: center;
   transform: scale(0.9);
@@ -131,7 +131,7 @@ h1, h2, h3, h4 {
   transform: scale(1.05);
   opacity: 1;
   z-index: 2;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
 .project-card img {
@@ -148,26 +148,28 @@ h1, h2, h3, h4 {
   color: #1b3b6f;
   margin: 10px 0 5px;
   font-size: 1.1rem;
+  padding : 10px
 }
 
 .project-card p {
   color: #444;
   margin: 0 0 15px;
-  font-size: 0.5 rem;
+  font-size: 0.8rem;
   line-height: 1.4;
   min-height: 60px;
 }
 
 /* ====== BUTTON (voir projet) ====== */
 .btn {
-  background-color: #0077cc;
+  background-color: #040821;
   color: white;
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 8px;
+  padding: 5px 12px;
+  border-radius: 5px;
   font-weight: 500;
   transition: all 0.3s ease;
   display: inline-block;
+  font-size : 14px;
 }
 
 .btn:hover {
@@ -213,7 +215,7 @@ h1, h2, h3, h4 {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 25px;
+  gap: 20px;
   margin-top: 40px;
 }
 
@@ -237,6 +239,8 @@ h1, h2, h3, h4 {
   margin-bottom: 8px;
 }
 
+.skill-card p {
+  font-size : 12px;
 
 /* ====== CV ====== */
 .cv {
