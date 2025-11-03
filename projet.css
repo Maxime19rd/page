@@ -22,8 +22,8 @@ h1, h2, h3, h4 {
 
 /* ====== HEADER ====== */
 .header {
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-color: #040821;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -31,6 +31,9 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
+}
+.header h1{
+  color : #fff;
 }
 
 .navbar a {
