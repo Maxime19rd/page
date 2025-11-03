@@ -2,6 +2,7 @@
 const projects = {
   shiny: {
     title: "Application R Shiny",
+    contexte : "null",
     media: { type: "iframe", src: "https://ton-app-shiny-link" },
     description: "Exploration interactive de modèles de classification supervisée avec R Shiny.",
     tech: ["R / Shiny", "ggplot2", "dplyr", "tidyr"]
@@ -14,20 +15,22 @@ const projects = {
     tech: ["Power Apps", "SharePoint", "Power BI"]
   },
   powerbi: {
-    title: "Tableaux de bord Power BI",
+    title: "Tableaux de bord Power BI pour le suivi de vestiaire sur site industriel",
+    contexte : "null",
     media: { type: "iframe", src: "https://app.powerbi.com/view?r=..." },
     description: "Automatisation des rapports et mesures DAX pour un suivi efficace.",
     tech: ["Power BI", "DAX", "Power Query"]
   },
   classification: {
-    title: "Classification supervisée",
+    title: "Méthodes de classification supervisée avec R et Python",
     contexte : "Ce projet, réalisé durant mon Master 1 de Statistiques Appliquées, avait pour objectif d’étudier et de comparer plusieurs méthodes de classification supervisée à travers une approche théorique et pratique. Nous avons implémenté cinq algorithmes de classification — tels que la régression logistique, les k plus proches voisins, les arbres de décision, les forêts aléatoires et les SVM — en R et en Python. L’étude portait sur différents jeux de données afin d’évaluer les performances, la robustesse et l’interprétabilité de chaque méthode. Un rapport complet d’environ 200 pages, présentant les analyses, les visualisations et le code reproductible, a été publié sur HAL Science.",
     media: { type: "image", src: "images/classification2.png" },
     description: "Comparaison de cinq méthodes de classification en R et Python.",
     tech: ["R", "Python", "Scikit-learn", "caret"]
   },
   decisiontools: {
-    title: "Outils décisionnels",
+    title: "Transformation de données avec Power Query",
+    contexte : "null",
     media: { type: "image", src: "images/decisiontools.jpg" },
     description: "Centralisation d’applications internes avec Power Apps.",
     tech: ["Power Apps", "SharePoint", "Power BI"]
@@ -42,6 +45,8 @@ const project = projects[projetKey];
 if (project) {
   // Titre
   document.getElementById("project-title").textContent = project.title;
+
+  document.getElementbyId("project-contexte").textContent = project.contexte;
 
   // Description
   document.getElementById("project-description").textContent = project.description;
