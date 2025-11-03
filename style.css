@@ -244,14 +244,14 @@ h1, h2, h3, h4 {
 /* ====== CV ====== */
 .cv {
   text-align: center;
-  align-item: center;
+  align-items: center;
 }
 
 /* ====== CONTACT ====== */
 .contact {
   text-align: center;
   line-height: 1.8;
-  align-item: center;
+  align-items: center;
 }
 
 .contact a {
@@ -271,5 +271,5 @@ h1, h2, h3, h4 {
   background: #f0f2f7;
   color: #555;
   font-size: 0.9em;
-  align-item: center;
+  align-items: center;
 }
