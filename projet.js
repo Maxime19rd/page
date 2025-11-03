@@ -8,7 +8,7 @@ const projects = {
   },
   powerapps: {
     title: "Portail Power Apps",
-    contexte : "Ce projet a été réalisé durant mon stage de Master 2 en Statistique et Data Science chez Orano DS à La Hague. L’objectif était de concevoir une application Power Apps permettant de centraliser l’accès aux rapports Power BI utilisés par les équipes métier. Ce portail visait à améliorer la navigation, la visibilité et la documentation des rapports existants, tout en facilitant la communication entre les utilisateurs et les concepteurs de tableaux de bord"
+    contexte : "Ce projet a été réalisé durant mon stage de Master 2 en Statistique et Data Science chez Orano DS à La Hague. L’objectif était de concevoir une application Power Apps permettant de centraliser l’accès aux rapports Power BI utilisés par les équipes métier. Ce portail visait à améliorer la navigation, la visibilité et la documentation des rapports existants, tout en facilitant la communication entre les utilisateurs et les concepteurs de tableaux de bord",
     media: { type: "image", src: "images/apporano.png" },
     description: "Application centralisant les rapports Power BI et les contacts métier.",
     tech: ["Power Apps", "SharePoint", "Power BI"]
