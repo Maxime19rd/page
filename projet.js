@@ -1,41 +1,46 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const projects = {
-    shiny: {
-      title: "Application R Shiny",
-      contexte: "Exploration interactive de modèles de classification supervisée avec R Shiny.",
-      media: { type: "iframe", src: "https://ton-app-shiny-link" },
-      description: "Ce projet consiste à créer une application R Shiny pour explorer et visualiser des modèles de classification.",
-      tech: ["R / Shiny", "ggplot2", "dplyr", "tidyr"]
-    },
-    powerapps: {
-      title: "Portail Power Apps",
-      contexte: "Ce projet a été réalisé durant mon stage de Master 2 en Statistique et Data Science chez Orano DS à La Hague. L’objectif était de concevoir une application Power Apps permettant de centraliser l’accès aux rapports Power BI utilisés par les équipes métier.",
-      media: { type: "image", src: "images/apporano.png" },
-      description: "Application centralisant les rapports Power BI et les contacts métier.",
-      tech: ["Power Apps", "SharePoint", "Power BI"]
-    },
-    powerbi: {
-      title: "Tableaux de bord Power BI",
-      contexte: "Projet réalisé pour automatiser le suivi des vestiaires et uniformiser les rapports sur site industriel.",
-      media: { type: "iframe", src: "https://app.powerbi.com/view?r=..." },
-      description: "Automatisation des rapports et mesures DAX pour un suivi efficace.",
-      tech: ["Power BI", "DAX", "Power Query"]
-    },
-    classification: {
-      title: "Méthodes de classification supervisée",
-      contexte: "Projet de Master 1 visant à étudier et comparer cinq méthodes de classification supervisée avec R et Python.",
-      media: { type: "image", src: "images/classification2.png" },
-      description: "Comparaison de cinq méthodes de classification en R et Python.",
-      tech: ["R", "Python", "Scikit-learn", "caret"]
-    },
-    decisiontools: {
-      title: "Transformation de données avec Power Query",
-      contexte: "Centralisation d’applications internes et outils décisionnels pour l’entreprise.",
-      media: { type: "image", src: "images/decisiontools.jpg" },
-      description: "Gestion et transformation des données pour les équipes métier.",
-      tech: ["Power Apps", "SharePoint", "Power BI"]
-    }
-  };
+const projects = {
+  shiny: {
+    title: "Application R Shiny",
+    contexte: "Ce projet académique avait pour objectif de créer une application interactive permettant d’explorer et de comparer différents modèles de classification supervisée. L’enjeu principal était de rendre accessibles les résultats statistiques et les performances des modèles aux utilisateurs, même sans compétences techniques avancées. L’accent a été mis sur l’ergonomie et la visualisation dynamique des résultats.",
+    media: { type: "iframe", src: "https://ton-app-shiny-link" },
+    description: "L’application R Shiny permet de charger des jeux de données, de configurer et d’entraîner plusieurs modèles de classification (régression logistique, k-NN, arbres de décision, forêts aléatoires, SVM). Les utilisateurs peuvent visualiser les performances des modèles via des graphiques interactifs, explorer les contributions des variables explicatives et comparer les prédictions. Ce projet m’a permis de consolider mes compétences en R, en visualisation de données et en conception d’interfaces interactives.",
+    tech: ["R / Shiny", "ggplot2", "dplyr", "tidyr"]
+  },
+
+  powerapps: {
+    title: "Portail Power Apps",
+    contexte: "Ce projet a été réalisé lors de mon stage de Master 2 chez Orano DS à La Hague. Le but était de centraliser l’accès aux rapports Power BI utilisés par les équipes métier et de faciliter la communication entre les utilisateurs et les concepteurs de tableaux de bord. L’objectif était de réduire le temps de recherche des rapports et d’améliorer la documentation et la traçabilité des informations.",
+    media: { type: "image", src: "images/apporano.png" },
+    description: "J’ai conçu une application Power Apps offrant un portail interactif où les utilisateurs peuvent consulter, filtrer et rechercher des rapports selon le périmètre, la catégorie et les favoris. Le portail affiche dynamiquement les contacts métier associés à chaque rapport, permet de gérer l’historique des versions et d’ajouter de nouveaux rapports ou contacts via un formulaire intégré. Ce projet a renforcé mes compétences en Power Apps, Power Fx et intégration avec SharePoint et Power BI, tout en améliorant l’expérience utilisateur et la productivité des équipes.",
+    tech: ["Power Apps", "SharePoint", "Power BI"]
+  },
+
+  powerbi: {
+    title: "Tableaux de bord Power BI",
+    contexte: "Ce projet professionnel visait à automatiser le suivi des vestiaires et à uniformiser les rapports existants sur un site industriel. Le défi consistait à consolider des données provenant de multiples sources, à créer des mesures fiables et à proposer une interface intuitive pour la consultation des indicateurs clés par les équipes opérationnelles.",
+    media: { type: "iframe", src: "https://app.powerbi.com/view?r=..." },
+    description: "J’ai développé des tableaux de bord intégrant des mesures DAX avancées et des transformations Power Query complexes pour assurer la fiabilité et la cohérence des données. Les dashboards permettent de suivre les vestiaires, détecter rapidement les anomalies et visualiser les indicateurs clés de performance. Ce projet m’a permis d’acquérir une expertise en modélisation de données, en automatisation de rapports et en amélioration de l’expérience utilisateur dans un contexte industriel exigeant.",
+    tech: ["Power BI", "DAX", "Power Query"]
+  },
+
+  classification: {
+    title: "Méthodes de classification supervisée",
+    contexte: "Projet académique réalisé en Master 1 visant à étudier et comparer cinq méthodes de classification supervisée (régression logistique, k plus proches voisins, arbres de décision, forêts aléatoires et SVM) sur différents jeux de données. L’objectif était de comprendre les forces et limites de chaque algorithme, d’évaluer leur performance et leur robustesse, et de produire un rapport complet avec analyses et visualisations.",
+    media: { type: "image", src: "images/classification2.png" },
+    description: "J’ai implémenté et comparé les modèles en R et Python, en utilisant des métriques standards pour évaluer la performance (précision, rappel, F1-score, matrice de confusion). Le projet incluait l’analyse graphique des résultats et la production d’un rapport de 200 pages publié sur HAL Science. Ce travail m’a permis de renforcer mes compétences en analyse de données, en machine learning et en documentation scientifique, tout en mettant en pratique les concepts théoriques appris en cours.",
+    tech: ["R", "Python", "Scikit-learn", "caret"]
+  },
+
+  decisiontools: {
+    title: "Transformation de données avec Power Query",
+    contexte: "Ce projet professionnel consistait à traiter et structurer des fichiers logs non standardisés provenant de systèmes industriels. L’objectif était de rendre ces données exploitables dans Power BI pour le suivi opérationnel et l’analyse métier, en automatisant le processus de nettoyage et de transformation.",
+    media: { type: "image", src: "images/decisiontools.jpg" },
+    description: "J’ai mis en place un processus complet dans Power Query incluant l’agrégation de fichiers multi-lignes, le nettoyage des données, l’extraction des champs clés (date, heure, type d’événement, message), et la transformation en tables structurées. Ces tables sont ensuite utilisées dans des dashboards Power BI pour le suivi et l’analyse. Ce projet m’a permis d’acquérir une forte expertise dans la manipulation de données complexes et dans la conception de pipelines fiables pour la prise de décision.",
+    tech: ["Power Query", "SharePoint", "Power BI"]
+  }
+};
+
 
   const projetKey = new URLSearchParams(window.location.search).get('id');
   const project = projects[projetKey];
@@ -81,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         break;
     }
     mediaElem.style.width = "100%";
-    mediaElem.style.borderRadius = "15px";
+    mediaElem.style.borderRadius = "10px";
     mediaElem.style.boxShadow = "0 4px 12px rgba(0,0,0,0.08)";
     mediaContainer.appendChild(mediaElem);
   }
