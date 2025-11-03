@@ -116,7 +116,7 @@ h1, h2, h3, h4 {
 
 /* ====== PROJECT CARD ====== */
 .project-card {
-  flex: 0 0 clamp(300px, 30vw, 320px); /* s’adapte à l’écran */
+  flex: 0 0 clamp(400px, 30vw, 320px); /* s’adapte à l’écran */
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
