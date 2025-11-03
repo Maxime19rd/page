@@ -13,16 +13,19 @@ h1, h2, h3, h4 {
 
 .section {
   padding: 40px 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
 }
 
 /* ====== HEADER ====== */
@@ -37,6 +40,7 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 15px 40px;
 }
+
 .header h1 {
   color: #fff;
 }
@@ -53,10 +57,72 @@ h1, h2, h3, h4 {
   color: #0077cc;
 }
 
-/* ====== PROJECT DETAIL ====== */
+/* ====== SECTION PROJET ====== */
 .project-detail h2 {
+  margin-top: 0;
   font-size: 2rem;
+  color: #1b3b6f;
+}
+
+.project-detail p {
+  line-height: 1.7;
+  color: #444;
   margin-bottom: 20px;
 }
 
-.proj
+.project-detail ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.project-detail ul li {
+  margin-bottom: 5px;
+}
+
+/* ====== MEDIA ====== */
+.project-detail img,
+.project-detail video,
+.project-detail iframe {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* ====== BOUTON ====== */
+.btn {
+  background-color: #040821;
+  color: white;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+  transform: translateY(-2px);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .project-detail img,
+  .project-detail video,
+  .project-detail iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .project-detail h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-detail p, 
+  .project-detail ul li {
+    font-size: 0.95rem;
+  }
+}
