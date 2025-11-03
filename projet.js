@@ -8,7 +8,8 @@ const projects = {
   },
   powerapps: {
     title: "Portail Power Apps",
-    media: { type: "image", src: "images/powerapps.jpg" },
+    contexte : "Ce projet a été réalisé durant mon stage de Master 2 en Statistique et Data Science chez Orano DS à La Hague. L’objectif était de concevoir une application Power Apps permettant de centraliser l’accès aux rapports Power BI utilisés par les équipes métier. Ce portail visait à améliorer la navigation, la visibilité et la documentation des rapports existants, tout en facilitant la communication entre les utilisateurs et les concepteurs de tableaux de bord"
+    media: { type: "image", src: "images/apporano.png" },
     description: "Application centralisant les rapports Power BI et les contacts métier.",
     tech: ["Power Apps", "SharePoint", "Power BI"]
   },
@@ -20,7 +21,8 @@ const projects = {
   },
   classification: {
     title: "Classification supervisée",
-    media: { type: "image", src: "images/classification.jpg" },
+    contexte : "Ce projet, réalisé durant mon Master 1 de Statistiques Appliquées, avait pour objectif d’étudier et de comparer plusieurs méthodes de classification supervisée à travers une approche théorique et pratique. Nous avons implémenté cinq algorithmes de classification — tels que la régression logistique, les k plus proches voisins, les arbres de décision, les forêts aléatoires et les SVM — en R et en Python. L’étude portait sur différents jeux de données afin d’évaluer les performances, la robustesse et l’interprétabilité de chaque méthode. Un rapport complet d’environ 200 pages, présentant les analyses, les visualisations et le code reproductible, a été publié sur HAL Science.",
+    media: { type: "image", src: "images/classification2.png" },
     description: "Comparaison de cinq méthodes de classification en R et Python.",
     tech: ["R", "Python", "Scikit-learn", "caret"]
   },
