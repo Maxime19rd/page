@@ -2,7 +2,7 @@
 body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom, #f8f9fb, #e2e6ea);
+  background: linear-gradient(to bottom, #f8f9fb, #D1D3E6);
   color: #222;
 }
 
@@ -30,8 +30,8 @@ h1, h2, h3, h4 {
 
 /* ====== HEADER ====== */
 .header {
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-color: #040821;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -40,9 +40,12 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 15px 40px;
 }
+.header h1{
+  color : #fff;
+}
 
 .navbar a {
-  color: #1b3b6f;
+  color: #fff;
   text-decoration: none;
   margin: 0 12px;
   font-weight: 500;
@@ -58,6 +61,7 @@ h1, h2, h3, h4 {
   line-height: 1.8;
   color: #444;
   max-width: 800px;
+  min-width : 700px;
 }
 
 .about-container {
@@ -75,7 +79,7 @@ h1, h2, h3, h4 {
 
 .about-image {
   flex: 1;
-  min-width: 280px;
+  min-width: 400px;
   display: flex;
   justify-content: center;
 }
@@ -132,7 +136,7 @@ h1, h2, h3, h4 {
 
 .project-card img {
   width: 100%;
-  height: 160px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -149,7 +153,7 @@ h1, h2, h3, h4 {
 .project-card p {
   color: #444;
   margin: 0 0 15px;
-  font-size: 0.95rem;
+  font-size: 0.5 rem;
   line-height: 1.4;
   min-height: 60px;
 }
@@ -208,7 +212,7 @@ h1, h2, h3, h4 {
 /* ====== SKILLS ====== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
   margin-top: 40px;
 }
@@ -216,7 +220,7 @@ h1, h2, h3, h4 {
 .skill-card {
   background: linear-gradient(135deg, #ffffff, #f0f4f8);
   border-radius: 15px;
-  padding: 25px 20px;
+  padding: 10px 10px;
   text-align: center;
   box-shadow: 0 3px 10px rgba(0,0,0,0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -230,7 +234,7 @@ h1, h2, h3, h4 {
 .skill-card img {
   width: 50px;
   height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 /* ====== CV ====== */
