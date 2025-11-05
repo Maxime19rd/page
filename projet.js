@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     powerbi: {
       title: "TDB Power BI - Occupation de vestiaire sur site industriel",
       contexte: "Ce projet professionnel visait à automatiser le suivi des vestiaires et à uniformiser les rapports existants sur un site industriel. Le défi consistait à consolider des données provenant de multiples sources, à créer des mesures fiables et à proposer une interface intuitive pour la consultation des indicateurs clés par les équipes opérationnelles.",
-      media: { type: "image", src: "pbivestiaire.png" },
+      media: { type: "image", src: "images/pbivestiaire.png" },
       description: "J’ai développé des tableaux de bord intégrant des mesures DAX avancées et des transformations Power Query complexes pour assurer la fiabilité et la cohérence des données. Les dashboards permettent de suivre les vestiaires, détecter rapidement les anomalies et visualiser les indicateurs clés de performance. Ce projet m’a permis d’acquérir une expertise en modélisation de données, en automatisation de rapports et en amélioration de l’expérience utilisateur dans un contexte industriel exigeant.",
       tech: ["Power BI", "DAX", "Power Query"]
     },
