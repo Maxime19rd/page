@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     shiny: {
       title: "Application R Shiny",
       contexte: "Ce projet académique avait pour objectif de créer une application interactive permettant d’explorer et de comparer différents modèles de classification supervisée. L’enjeu principal était de rendre accessibles les résultats statistiques et les performances des modèles aux utilisateurs, même sans compétences techniques avancées. L’accent a été mis sur l’ergonomie et la visualisation dynamique des résultats.",
-      media: { type: "iframe", src: "https://ton-app-shiny-link" },
+      media: { type: "iframe", src: "https://qnr4y4-maxime-rey0dor0ne.shinyapps.io/application/" },
       description: "L’application R Shiny permet de charger des jeux de données, de configurer et d’entraîner plusieurs modèles de classification (régression logistique, k-NN, arbres de décision, forêts aléatoires, SVM). Les utilisateurs peuvent visualiser les performances des modèles via des graphiques interactifs, explorer les contributions des variables explicatives et comparer les prédictions. Ce projet m’a permis de consolider mes compétences en R, en visualisation de données et en conception d’interfaces interactives.",
       tech: ["R / Shiny", "ggplot2", "dplyr", "tidyr"]
     },
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
       tech: ["Power Apps", "SharePoint", "Power BI"]
     },
     powerbi: {
-      title: "Tableaux de bord Power BI",
+      title: "TDB Power BI - Occupation de vestiaire sur site industriel",
       contexte: "Ce projet professionnel visait à automatiser le suivi des vestiaires et à uniformiser les rapports existants sur un site industriel. Le défi consistait à consolider des données provenant de multiples sources, à créer des mesures fiables et à proposer une interface intuitive pour la consultation des indicateurs clés par les équipes opérationnelles.",
-      media: { type: "iframe", src: "https://app.powerbi.com/view?r=..." },
+      media: { type: "image", src: "pbivestiaire.png" },
       description: "J’ai développé des tableaux de bord intégrant des mesures DAX avancées et des transformations Power Query complexes pour assurer la fiabilité et la cohérence des données. Les dashboards permettent de suivre les vestiaires, détecter rapidement les anomalies et visualiser les indicateurs clés de performance. Ce projet m’a permis d’acquérir une expertise en modélisation de données, en automatisation de rapports et en amélioration de l’expérience utilisateur dans un contexte industriel exigeant.",
       tech: ["Power BI", "DAX", "Power Query"]
     },
