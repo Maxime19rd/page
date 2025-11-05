@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     classification: {
       title: "Méthodes de classification supervisée",
       contexte: "Projet académique réalisé en Master 1 visant à étudier et comparer cinq méthodes de classification supervisée (régression logistique, k plus proches voisins, arbres de décision, forêts aléatoires et SVM) sur différents jeux de données. L’objectif était de comprendre les forces et limites de chaque algorithme, d’évaluer leur performance et leur robustesse, et de produire un rapport complet avec analyses et visualisations.",
-      media: { type: "image", src: "images/classification2.png" },
+      media: { type: "iframe", src: "https://cel.hal.science/hal-04690630v2" },
       description: "J’ai implémenté et comparé les modèles en R et Python, en utilisant des métriques standards pour évaluer la performance (précision, rappel, F1-score, matrice de confusion). Le projet incluait l’analyse graphique des résultats et la production d’un rapport de 200 pages publié sur HAL Science. Ce travail m’a permis de renforcer mes compétences en analyse de données, en machine learning et en documentation scientifique, tout en mettant en pratique les concepts théoriques appris en cours.",
       tech: ["R", "Python", "Scikit-learn", "caret"]
     },
