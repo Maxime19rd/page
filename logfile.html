@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet Fichiers Logs Power Query | Maxime Rey-Dorène</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <h1>Maxime Rey-Dorène</h1>
+    <nav class="navbar">
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#projects">Projets</a>
+      <a href="index.html#skills">Compétences</a>
+      <a href="index.html#cv">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h2>Traitement des fichiers logs avec Power Query</h2>
+        <p>
+          Développement d’un processus Power Query pour nettoyer, restructurer et exploiter
+          des fichiers logs texte non structurés enregistrés sur SharePoint.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="images/logs_hero.png" alt="Illustration générique des logs" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <section class="content container">
+
+    <h2>Contexte</h2>
+    <p>
+      Lors de mon stage chez <strong>Orano DS</strong>, j’ai été amené à traiter des fichiers logs
+      provenant de systèmes de suivi opérationnel.  
+      Ces fichiers sont au format texte, non structurés, et certaines entrées s’étendent sur plusieurs lignes.
+    </p>
+
+    <h2>Objectifs du projet</h2>
+    <ul>
+      <li>Agréger plusieurs fichiers logs provenant de SharePoint ;</li>
+      <li>Identifier et reconstituer les enregistrements multi-lignes ;</li>
+      <li>Extraire les champs clés : date, heure, type d’alerte, message ;</li>
+      <li>Transformer les données en table exploitable dans Power BI ;</li>
+      <li>Permettre une visualisation claire et un suivi des événements opérationnels.</li>
+    </ul>
+
+    <h2>Développement Power Query</h2>
+    <p>
+      Le traitement a été réalisé entièrement dans Power Query, incluant :
+    </p>
+    <ul>
+      <li>Connexion aux fichiers SharePoint et agrégation automatique ;</li>
+      <li>Filtrage et nettoyage des lignes superflues ;</li>
+      <li>Détection des débuts d’enregistrements et reconstitution des lignes multi-lignes ;</li>
+      <li>Extraction des champs essentiels via des transformations M ;</li>
+      <li>Création d’une table finale exploitable pour les rapports et visualisations.</li>
+    </ul>
+
+    <h2>Illustration du processus</h2>
+    <p>
+      Pour des raisons de confidentialité, aucune capture des données réelles n’est disponible.  
+      Ci-dessous un schéma générique illustrant les étapes du traitement :
+    </p>
+
+    <div class="project-gallery">
+      <img src="images/logs_schema_generic.png" alt="Schéma générique du traitement des logs">
+    </div>
+
+    <h2>Technologies utilisées</h2>
+    <ul class="tech-list">
+      <li><strong>Power Query :</strong> traitement, nettoyage et transformation des fichiers logs</li>
+      <li><strong>M :</strong> langage de requêtes Power Query pour manipulations avancées</li>
+      <li><strong>Power BI :</strong> visualisation des logs transformés et analyse des alertes</li>
+      <li><strong>SharePoint :</strong> stockage des fichiers source</li>
+    </ul>
+
+    <div class="return-btn-container">
+      <a href="index.html" class="btn-return">Retour aux projets</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Maxime Rey-Dorène</p>
+  </footer>
+
+</body>
+</html>
