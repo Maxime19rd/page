@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau de bord Power BI – Suivi des vestiaires | Maxime Rey-Dorène</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <h1>Maxime Rey-Dorène</h1>
+    <nav class="navbar">
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#projects">Projets</a>
+      <a href="index.html#skills">Compétences</a>
+      <a href="index.html#cv">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h2>Tableau de bord Power BI – Suivi des vestiaires</h2>
+        <p>
+          Conception d’un tableau de bord Power BI interactif permettant le suivi des vestiaires du site,
+          avec une carte personnalisée développée en DAX et JSON pour la représentation géographique des zones.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/pbi_vestiaires_hero.png" alt="Aperçu du tableau de bord Power BI" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <section class="content container">
+
+    <h2>Contexte</h2>
+    <p>
+      Ce projet a été mené dans le cadre de mon <strong>stage de Master 2 Statistiques Appliquées et Analyse Décisionnelle</strong>
+      chez <strong>Orano DS</strong> à La Hague.  
+      L’objectif était de concevoir un <strong>tableau de bord Power BI</strong> pour le <strong>suivi des vestiaires</strong> du site,
+      permettant de visualiser en temps réel les taux d’occupation, d’analyser les anomalies
+      et d’optimiser la gestion des espaces.
+    </p>
+
+    <h2>Objectifs du projet</h2>
+    <ul>
+      <li>Centraliser les données issues des systèmes de badge et de maintenance ;</li>
+      <li>Visualiser l’occupation des vestiaires par zone, bâtiment et période ;</li>
+      <li>Créer une <strong>carte interactive personnalisée</strong> reflétant la structure réelle des vestiaires ;</li>
+      <li>Mettre en place des <strong>indicateurs DAX</strong> pour détecter les anomalies et tendances ;</li>
+      <li>Offrir un outil simple et intuitif pour les équipes de suivi sur site.</li>
+    </ul>
+
+    <h2>Carte interactive personnalisée</h2>
+    <p>
+      Une carte sur mesure a été développée à partir d’un fichier JSON personnalisé,
+      permettant d’afficher les zones et vestiaires de manière fidèle à la configuration du site.  
+      Des mesures DAX ont ensuite permis de colorer dynamiquement les zones selon leur taux d’occupation.
+    </p>
+
+    <!-- ===== VIDEO DE DEMONSTRATION ===== -->
+    <div class="video-container">
+      <video controls poster="images/pbi_vestiaires_video_preview.png">
+        <source src="videos/pbi_vestiaires_demo.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la lecture de vidéo.
+      </video>
+    </div>
+
+    <h2>Captures d’écran</h2>
+    <div class="project-gallery">
+      <img src="images/pbi_vestiaires_dashboard.png" alt="Vue d’ensemble du tableau de bord Power BI">
+      <img src="images/pbi_vestiaires_card.png" alt="Indicateurs clés du tableau de bord">
+      <img src="images/pbi_vestiaires_map.png" alt="Carte interactive personnalisée dans Power BI">
+    </div>
+
+    <h2>Technologies utilisées</h2>
+    <ul class="tech-list">
+      <li><strong>Power BI :</strong> conception du tableau de bord, mesures DAX, visualisations</li>
+      <li><strong>JSON :</strong> création de la carte personnalisée</li>
+      <li><strong>Excel / SharePoint :</strong> stockage et mise à jour des données sources</li>
+      <li><strong>Power Query :</strong> nettoyage et transformation des données</li>
+    </ul>
+
+    <div class="return-btn-container">
+      <a href="index.html" class="btn-return">Retour aux projets</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Maxime Rey-Dorène</p>
+  </footer>
+
+</body>
+</html>
