@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application R Shiny | Maxime Rey-Dorène</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projet.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <h1>Maxime Rey-Dorène</h1>
+    <nav class="navbar">
+      <a href="index.html#about">À propos</a>
+      <a href="index.html#projects">Projets</a>
+      <a href="index.html#skills">Compétences</a>
+      <a href="index.html#cv">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h2>Application interactive sous R Shiny</h2>
+        <p>
+          Développement d’une application R Shiny permettant de charger un jeu de données,
+          d’appliquer des modèles statistiques et de visualiser les résultats de manière interactive.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img src="images/shiny_app.png" alt="Aperçu de l'application Shiny" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <section class="content container">
+
+    <h2>Contexte</h2>
+    <p>
+      Ce projet a été réalisé dans le cadre du <strong>Master 2 Statistiques Appliquées et Analyse Décisionnelle</strong> à l’Université de Caen.  
+      L’objectif était de <strong>rendre interactifs et accessibles plusieurs modèles statistiques</strong> via une interface R Shiny conviviale.
+    </p>
+
+    <h2>Objectifs du projet</h2>
+    <ul>
+      <li>Charger dynamiquement un jeu de données utilisateur ;</li>
+      <li>Appliquer différentes méthodes d’analyse statistique ;</li>
+      <li>Afficher les résultats de manière interactive ;</li>
+      <li>Permettre l’export des résultats et des visualisations.</li>
+    </ul>
+
+    <h2>Fonctionnalités principales</h2>
+    <ul>
+      <li><strong>Chargement des données :</strong> import de fichiers CSV, aperçu et nettoyage ;</li>
+      <li><strong>Analyse :</strong> choix et paramétrage du modèle ;</li>
+      <li><strong>Visualisation :</strong> graphiques interactifs via <code>ggplot2</code> ;</li>
+      <li><strong>Résultats :</strong> affichage des performances et export des prédictions.</li>
+    </ul>
+
+    <div class="project-gallery">
+      <img src="images/shiny_ui.png" alt="Interface de l'application Shiny">
+      <img src="images/shiny_plot.png" alt="Exemple de graphique interactif">
+    </div>
+
+    <!-- ===== SECTION IFRAME ===== -->
+    <h2>Application en ligne</h2>
+    <div class="iframe-container">
+      <iframe
+        src="https://qnr4y4-maxime-rey0dor0ne.shinyapps.io/application/"
+        title="Application R Shiny"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+      <a href="https://ton-app.shinyapps.io/nom-de-ton-app/" target="_blank" class="btn">
+        Ouvrir dans un nouvel onglet
+      </a>
+    </div>
+
+    <h2>Technologies utilisées</h2>
+    <ul class="tech-list">
+      <li><strong>R :</strong> Shiny, ggplot2, dplyr, readr</li>
+      <li><strong>HTML/CSS :</strong> personnalisation de l’interface utilisateur</li>
+      <li><strong>Git :</strong> versionnage et suivi du développement</li>
+      <li><strong>HAL Science :</strong> publication du rapport associé</li>
+    </ul>
+
+    <div class="return-btn-container">
+      <a href="index.html" class="btn-return">Retour aux projets</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Maxime Rey-Dorène</p>
+  </footer>
+
+</body>
+</html>
