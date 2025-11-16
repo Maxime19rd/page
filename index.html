@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Maxime Rey-Dorène</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Ajout de Google Fonts pour les polices -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -14,9 +15,17 @@
       <a href="#about">À propos</a>
       <a href="#projects">Projets</a>
       <a href="#skills">Compétences</a>
+      <a href="#experience">Expériences</a> <!-- Nouvelle section -->
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
+    <!-- Menu hamburger pour mobile -->
+    <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <button id="theme-toggle" class="theme-btn"><img src="images/logo/lune.png" alt="Lune"></button>
   </header>
 
   <main>
@@ -30,103 +39,120 @@
             <p>Ce portfolio présente <strong>quelques projets</strong> que j’ai réalisés, tant dans le cadre <strong>académique</strong> que <strong>professionnel</strong>, illustrant mes compétences en analyse de données et développement d’outils décisionnels interactifs.</p>
           </div>
           <div class="about-image">
-            <img src="images/test.png" alt="Illustration data" />
+            <img src="images/test.png" alt="Illustration data" loading="lazy" />
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section projects">
-      <div class="container">
-        <h2>Projets</h2>
-        <div class="carousel-wrapper" role="region" aria-label="Carousel de projets">
-          <button class="carousel-btn prev" aria-label="Projet précédent">‹</button>
-          <div class="carousel-track">
-            <article class="project-card">
-              <img src="images/shinyapp.png" alt="R Shiny" />
-              <div class="project-content">
-                <h3>Application R Shiny</h3>
-                <p>Exploration interactive de modèles de classification et visualisation dynamique.</p>
-                <a href="shiny.html" class="btn">Voir le projet</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <img src="images/apporano.png" alt="Power Apps" />
-              <div class="project-content">
-                <h3>Portail Power Apps</h3>
-                <p>Application de centralisation des rapports Power BI pour les équipes métier.</p>
-                <a href="powerapps.html" class="btn">Voir le projet</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <img src="images/classification2.png" alt="Power BI" />
-              <div class="project-content">
-                <h3>Tableaux de bord Power BI</h3>
-                <p>Création de mesures DAX, suivi des vestiaires et uniformisation des rapports.</p>
-                <a href="pbivestiaire.html" class="btn">Voir le projet</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <img src="images/classification.png" alt="Classification" />
-              <div class="project-content">
-                <h3>Classification supervisée</h3>
-                <p>Comparaison de cinq méthodes de classification en R et Python sur divers jeux de données.</p>
-                <a href="classification.html" class="btn">Voir le projet</a>
-              </div>
-            </article>
-            <article class="project-card">
-              <img src="images/shinyapp2.png" alt="Decision Tools" />
-              <div class="project-content">
-                <h3>Outils décisionnels</h3>
-                <p>Centralisation des applications internes et outils de suivi opérationnel.</p>
-                <a href="logfile.html" class="btn">Voir le projet</a>
-              </div>
-            </article>
-          </div>
-          <button class="carousel-btn next" aria-label="Projet suivant">›</button>
+<section id="projects" class="section projects">
+  <div class="container">
+    <h2>Projets</h2>
+    <div class="projects-grid" role="region" aria-label="Liste des projets">
+      <article class="project-card">
+        <img src="images/shinyapp.png" alt="R Shiny" loading="lazy" />
+        <div class="project-content">
+          <h3>Application R Shiny</h3>
+          <p>Exploration interactive de modèles de classification et visualisation dynamique.</p>
+          <a href="shiny.html" class="btn">Voir le projet</a>
         </div>
-      </div>
-    </section>
+      </article>
+      <article class="project-card">
+        <img src="images/apporano.png" alt="Power Apps" loading="lazy" />
+        <div class="project-content">
+          <h3>Portail Power Apps</h3>
+          <p>Application de centralisation des rapports Power BI pour les équipes métier.</p>
+          <a href="powerapps.html" class="btn">Voir le projet</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <img src="images/pbivestiaire.png" alt="Power BI" loading="lazy" />
+        <div class="project-content">
+          <h3>Tableaux de bord Power BI</h3>
+          <p>Création de mesures DAX, suivi des vestiaires et uniformisation des rapports.</p>
+          <a href="pbivestiaire.html" class="btn">Voir le projet</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <img src="images/classification.png" alt="Classification" loading="lazy" />
+        <div class="project-content">
+          <h3>Classification supervisée</h3>
+          <p>Comparaison de cinq méthodes de classification en R et Python sur divers jeux de données.</p>
+          <a href="classification.html" class="btn">Voir le projet</a>
+        </div>
+      </article>
+      <article class="project-card">
+        <img src="images/test.png" alt="Decision Tools" loading="lazy" />
+        <div class="project-content">
+          <h3>Outils décisionnels</h3>
+          <p>Centralisation des applications internes et outils de suivi opérationnel.</p>
+          <a href="logfile.html" class="btn">Voir le projet</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 
     <section id="skills" class="section skills">
       <div class="container">
         <h2>Compétences</h2>
         <div class="skills-grid">
           <article class="skill-card python">
-            <img src="images/logo/logo_python.png" alt="Python" />
+            <img src="images/logo/logo_python.png" alt="Python" loading="lazy" />
             <h4>Python</h4>
             <p>Analyse de données, visualisation (Pandas, Matplotlib) et apprentissage automatique (Scikit-learn).</p>
           </article>
           <article class="skill-card r">
-            <img src="images/logo/logo_r.png" alt="R" />
+            <img src="images/logo/logo_r.png" alt="R" loading="lazy" />
             <h4>R / Shiny</h4>
             <p>Applications interactives et analyses statistiques avancées.</p>
           </article>
           <article class="skill-card powerbi">
-            <img src="images/logo/logo_pbi.png" alt="Power BI" />
+            <img src="images/logo/logo_pbi.png" alt="Power BI" loading="lazy" />
             <h4>Power BI</h4>
             <p>Modélisation, DAX, Power Query et automatisation de rapports décisionnels.</p>
           </article>
           <article class="skill-card powerapps">
-            <img src="images/logo/logo_pa.png" alt="Power Apps" />
+            <img src="images/logo/logo_pa.png" alt="Power Apps" loading="lazy" />
             <h4>Power Apps</h4>
             <p>Création d’applications métiers connectées à SharePoint et Power BI.</p>
           </article>
           <article class="skill-card sql">
-            <img src="images/logo/logo_sql.png" alt="SQL" />
+            <img src="images/logo/logo_sql.png" alt="SQL" loading="lazy" />
             <h4>SQL</h4>
             <p>Extraction et gestion de données relationnelles pour analyses et reporting.</p>
           </article>
           <article class="skill-card sas">
-            <img src="images/logo/logo_sas.png" alt="SAS" />
+            <img src="images/logo/logo_sas.png" alt="SAS" loading="lazy" />
             <h4>SAS</h4>
             <p>Statistiques descriptives, régression, classification, macros, XML.</p>
           </article>
           <article class="skill-card excel">
-            <img src="images/logo/logo_excel.png" alt="Excel" />
+            <img src="images/logo/logo_excel.png" alt="Excel" loading="lazy" />
             <h4>Excel</h4>
             <p>Programmation VBA, Tableaux Croisés Dynamiques.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nouvelle section Expériences -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <h2>Expériences</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Stage en Data Science - Secteur Nucléaire</h3>
+            <p><strong>Entreprise : [Nom de l'entreprise]</strong> | [Date]</p>
+            <p>Développement d'outils d'analyse de données pour optimiser les processus opérationnels.</p>
+          </div>
+          <div class="timeline-item">
+            <h3>Stage en Analyse Statistique</h3>
+            <p><strong>Entreprise : [Autre entreprise]</strong> | [Date]</p>
+            <p>Modélisation prédictive et création de rapports interactifs avec R Shiny.</p>
+          </div>
+          <!-- Ajoutez d'autres expériences ici -->
         </div>
       </div>
     </section>
