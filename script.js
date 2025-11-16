@@ -47,3 +47,25 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", updateCarousel);
   updateCarousel();
 });
+
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+      body.classList.add('dark-mode');
+      themeToggle.innerHTML = '<img src="images/logo/soleil.png" alt="Soleil">';
+  } else {
+      themeToggle.innerHTML = '<img src="images/logo/lune.png" alt="Lune">';
+  }
+
+  themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      themeToggle.innerHTML = isDark ? '<img src="images/logo/soleil.png" alt="Soleil">' : '<img src="images/logo/lune.png" alt="Lune">';
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+
+
+
+  
