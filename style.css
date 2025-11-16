@@ -3,12 +3,24 @@
   --secondary-color: #3498db; /* Bleu subtil pour les accents */
   --accent-color: #1a1a2e; /* Noir profond, mais utilisé avec parcimonie */
   --text-color: #34495e; /* Gris foncé pour le texte */
-  --bg-primary: #ffffff; /* Blanc pur pour l'épuration */
-  --bg-secondary: #f8f9fa; /* Blanc cassé léger pour les variations */
+  --bg-primary: #f8f9fa; /* Blanc pur pour l'épuration */
+  --bg-secondary: #fff; /* Blanc cassé léger pour les variations */
   --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05); /* Ombres très subtiles */
   --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.08); /* Ombres douces pour la profondeur */
   --border-radius: 8px; /* Bordures arrondies légères */
-  --transition: all 0.3s ease; /* Transitions fluides mais discrètes */
+  --transition: all 0.6s ease; /* Transitions fluides mais discrètes */
+}
+
+/* Variables pour le mode sombre (activé avec la classe .dark-mode sur body) */
+.dark-mode {
+  --primary-color: #ecf0f1; /* Gris clair pour les titres et accents principaux */
+  --secondary-color: #3498db; /* Bleu subtil pour les accents */
+  --accent-color: #1a1a2e; /* Noir profond pour les fonds */
+  --text-color: #ecf0f1; /* Gris clair pour le texte */
+  --bg-primary: #1a1a2e; /* Fond sombre principal */
+  --bg-secondary: #172736; /* Fond secondaire plus sombre */
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.3); /* Ombres subtiles pour mode sombre */
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.5); /* Ombres douces pour la profondeur */
 }
 
 * {
@@ -32,8 +44,9 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
+
 .section {
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   opacity: 0;
   transform: translateY(30px);
   transition: var(--transition);
@@ -51,9 +64,13 @@ h1, h2, h3, h4 {
   padding: 0 1.5rem;
 }
 
+.container h2 {
+  font-size: 1.8rem;
+}
+
 /* Header - Plus intégré et épuré */
 .header {
-  background: rgba(255, 255, 255, 0.95); /* Blanc cassé semi-transparent pour l'intégration */
+  background: var(--bg-secondary);
   box-shadow: var(--shadow-light);
   position: sticky;
   top: 0;
@@ -63,12 +80,13 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 1.5rem 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* Bordure subtile pour la séparation */
+  opacity: 0.9;
 }
 
 .header h1 {
   color: var(--primary-color); /* Texte sombre pour la cohérence */
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .navbar a {
@@ -106,19 +124,20 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 3rem;
   flex-wrap: wrap;
 }
 
 .about-text {
   flex: 1;
-  min-width: 320px;
+  min-width: 60%;
 }
 
 .about-text p {
   color: var(--text-color);
   max-width: 700px;
   font-size: 1.1rem;
+  text-indent: 2em;
+  text-align: justify;
 }
 
 .about-image {
@@ -133,134 +152,96 @@ h1, h2, h3, h4 {
   max-width: 550px;
   opacity: 0.95;
   transition: var(--transition);
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.8) 90%, rgba(0,0,0,0) 100%);
+  mask-repeat: no-repeat;
+  mask-size: cover;
 }
 
 
-/* Projects - Épuré, focus sur le contenu */
-.carousel-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
+
+/* Projects - Grille responsive au lieu du carousel */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 4rem;
+  margin-top: 2rem;
   justify-content: center;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 3rem;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 2rem;
-  transition: transform 0.6s ease;
-  padding: 1.5rem 0;
 }
 
 .project-card {
-  flex: 0 0 clamp(320px, 28vw, 380px);
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-light);
   overflow: hidden;
   text-align: center;
-  transform: scale(0.9);
-  opacity: 0.7;
   transition: var(--transition);
-  border: 1px solid rgba(0, 0, 0, 0.05); /* Bordure subtile pour l'élégance */
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.project-card.active {
-  transform: scale(1);
-  opacity: 1;
+.project-card:hover {
+  transform: translateY(-4px);
   box-shadow: var(--shadow-medium);
-  z-index: 10;
 }
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
 }
 
-.project-card:hover img {
-  transform: scale(1.02);
-}
 
 .project-content {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .project-card h3 {
   margin: 0.5rem 0 1rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--primary-color);
 }
 
 .project-card p {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 0.8rem;
   min-height: 4rem;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .btn {
   background: var(--primary-color);
-  color: #fff;
+  color: var(--bg-primary);
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.1rem 1rem;
   border-radius: var(--border-radius);
-  font-weight: 600;
+  font-weight: 400;
   transition: var(--transition);
   display: inline-block;
   box-shadow: var(--shadow-light);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: var(--shadow-medium);
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--bg-primary);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 2rem;
-  color: var(--primary-color);
-  cursor: pointer;
-  box-shadow: var(--shadow-light);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition);
-  z-index: 20;
-}
-
-.carousel-btn:hover {
-  background: var(--primary-color);
-  color: #fff;
-  transform: translateY(-50%) scale(1.05);
-}
-
-.carousel-btn.prev { left: 1rem; }
-.carousel-btn.next { right: 1rem; }
 
 /* Skills - Épuré, grille simple */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
 
 .skill-card {
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
   border-radius: var(--border-radius);
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   box-shadow: var(--shadow-light);
   transition: var(--transition);
@@ -273,18 +254,18 @@ h1, h2, h3, h4 {
 }
 
 .skill-card img {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 1.5rem;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
 }
 
 .skill-card h4 {
   margin: 1rem 0 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .skill-card p {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: var(--text-color);
   opacity: 0.9;
 }
@@ -324,8 +305,38 @@ h1, h2, h3, h4 {
     text-align: center;
     padding: 1rem;
   }
-  .carousel-btn { display: none; }
   .skills-grid { grid-template-columns: 1fr; }
   .section { padding: 3rem 1rem; }
   h1 { font-size: 1.5rem; }
 }
+
+  /* Bouton de toggle du thème */
+  .theme-btn {
+     background: var(--bg-secondary);
+     padding: 0.5rem;
+     border-radius: 50%; /* Bouton circulaire */
+     cursor: pointer;
+     width: 50px; /* Largeur fixe pour le cercle */
+     height: 50px; /* Hauteur fixe pour le cercle */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: var(--transition);
+     overflow: hidden; /* Pour éviter que l'image dépasse */
+     border: 0px;
+  }
+
+  .theme-btn:hover {
+   background: var(--bg-secondary);
+   color: var(--bg-secondary);
+}
+
+  .theme-btn img {
+     width: 25px; /* Taille de l'image à l'intérieur */
+     height: 25px;
+     transition: var(--transition);
+  }
+
+  .theme-btn:hover img {
+     transform: scale(1.1); /* Zoom sur l'image aussi */
+  }
